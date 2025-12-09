@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio/Projects Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-b-[#282e39] px-4 sm:px-6 md:px-10 py-3">
+<div class="flex items-center gap-4 text-black dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-black dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">My Portfolio</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-black dark:text-white hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Projects</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">About</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Get in touch</span>
+</button>
+</div>
+<div class="md:hidden">
+<button class="text-black dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col gap-8 mt-10">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-black dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Digital Creations</p>
+<p class="text-gray-500 dark:text-[#9da6b9] text-base font-normal leading-normal">An interactive gallery of my work in computational design, mathematics, and software development.</p>
+</div>
+</div>
+<!-- Chips -->
+<div class="flex gap-3 p-3 flex-wrap pr-4">
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-primary pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">All</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#282e39] hover:bg-gray-100 dark:hover:bg-[#3a4253] transition-colors pl-4 pr-4">
+<p class="text-black dark:text-white text-sm font-medium leading-normal">Desmos</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#282e39] hover:bg-gray-100 dark:hover:bg-[#3a4253] transition-colors pl-4 pr-4">
+<p class="text-black dark:text-white text-sm font-medium leading-normal">Blender</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#282e39] hover:bg-gray-100 dark:hover:bg-[#3a4253] transition-colors pl-4 pr-4">
+<p class="text-black dark:text-white text-sm font-medium leading-normal">Python</p>
+</div>
+</div>
+<!-- ImageGrid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 p-4">
+<div class="group relative flex flex-col gap-3 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-[#1a202c]">
+<img class="aspect-video w-full object-cover" data-alt="A 3D rendered parametric vase with intricate geometric patterns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3UoAdxH9VwBZ4xp3JJJA00hiLUsYG4TtjLsz-9-RI8l9MPkPpjrXx4x227oKbuxgB7-UTql5DwknouxgmVZ9KG5_ygTqdkADsQRtPosiMb5wSpraZYuFrSbEDdqwbw_gfSVY391-NV09ruiKAe9FEQGUrle3cqdxMQrmJj1Y_LFK6QIUs9koD1ygYXtsF45YNZHjq6wrpFdciTfqWTMUuKY9A4BeXRU_mpa2HLctGoqkrXJ1TdKnarJ2Ndj_vjpO9RRfyU-e2wppn"/>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="text-black dark:text-white text-lg font-bold leading-tight">Parametric Vase Generator</h3>
+<div class="flex gap-2 mt-2">
+<span class="text-xs font-medium text-green-700 dark:text-green-400 bg-green-100 dark:bg-green-900/50 py-1 px-2 rounded-full">Python</span>
+<span class="text-xs font-medium text-orange-700 dark:text-orange-400 bg-orange-100 dark:bg-orange-900/50 py-1 px-2 rounded-full">Blender</span>
+</div>
+<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
+<span class="text-white text-base font-bold">View Project</span>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col gap-3 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-[#1a202c]">
+<img class="aspect-video w-full object-cover" data-alt="A colorful sine wave visualization on a dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbTeAph-iE8jx8aEiDlkYuoJYkwXI-V0GsrjqouULktuJv3WYlB28Mg-pNO4eHH-10n8FXH8ZDw-0b8gdY2TG4Rf6oHCxmJzkfqUQclQ1dFOlTNyWjLLn8iv4ePmPQX_qRuhXA0qidka6K3Wz7wtiobmWDFkL4NIIItqKf7Y6CsOLlgwDA2QOUxYyTh2miSOWu-D65SfV9XrJwWfnFCjFXJbD_UrtHCPqZfoy0Ju0UGlF68MlmX9qhfI_k80zKA75uBLn-1gNbU1qP"/>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="text-black dark:text-white text-lg font-bold leading-tight">Interactive Sine Wave Explorer</h3>
+<div class="flex gap-2 mt-2">
+<span class="text-xs font-medium text-red-700 dark:text-red-400 bg-red-100 dark:bg-red-900/50 py-1 px-2 rounded-full">Desmos</span>
+<span class="text-xs font-medium text-blue-700 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/50 py-1 px-2 rounded-full">Mathematics</span>
+</div>
+<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
+<span class="text-white text-base font-bold">View Project</span>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col gap-3 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-[#1a202c]">
+<img class="aspect-video w-full object-cover" data-alt="A computer screen showing various data charts and graphs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzXDrDoIEredeglOJGdP-zJ3DBF0fAGrV1T6YuHMUQ9Uhn0o7PqSxx9xgTmMtJpWRYwQcVyUYRmWQyZuOzw_hNO_xB3Yl78jYR6V0_AZFmx6Ecv-Hm66wNxONc0Jn3eDJfzNVnuyb_7B-ThWk3O6feux3goC__kQmnhwB71VXwNS7iYD6j98xlpcQiNcnniyzk4eIHK2O19cbz4Upb5DfJNtGKvOSnepy3yRvy0zc5SR5V8ZPF2JExOVr6RqDJHcgKy8Y70jP0LJX5"/>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="text-black dark:text-white text-lg font-bold leading-tight">Data Visualization Tool</h3>
+<div class="flex gap-2 mt-2">
+<span class="text-xs font-medium text-green-700 dark:text-green-400 bg-green-100 dark:bg-green-900/50 py-1 px-2 rounded-full">Python</span>
+<span class="text-xs font-medium text-purple-700 dark:text-purple-400 bg-purple-100 dark:bg-purple-900/50 py-1 px-2 rounded-full">Data Science</span>
+</div>
+<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
+<span class="text-white text-base font-bold">View Project</span>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col gap-3 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-[#1a202c]">
+<img class="aspect-video w-full object-cover" data-alt="A still from a colorful 3D animated short film." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7D2Zza52bc1SQy_gFG0wJwORqdsVgtSGftnob4mgg6PlXQjMr42IHX0Mc9kOIj-JpcBfesis4TT8EN2IReHED5xTWgnebf6Iu_4759yQ1Tz55-PjjNI3Ecr7rI0ThfyV0v4iwXv9cDfj0OK7kr_Sh0tTijrTgQ2FgWcWN4e447KoE3BlRA2NfX3DupCDqxdHj2W6OGFrHIzigRijl8zARjYc2EQdqFh9zYJ2kHimMj11WOBOtcDAH3ZZhqCqv2sspBVpWJfwpwOIl"/>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="text-black dark:text-white text-lg font-bold leading-tight">3D Animated Short</h3>
+<div class="flex gap-2 mt-2">
+<span class="text-xs font-medium text-orange-700 dark:text-orange-400 bg-orange-100 dark:bg-orange-900/50 py-1 px-2 rounded-full">Blender</span>
+<span class="text-xs font-medium text-indigo-700 dark:text-indigo-400 bg-indigo-100 dark:bg-indigo-900/50 py-1 px-2 rounded-full">Animation</span>
+</div>
+<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
+<span class="text-white text-base font-bold">View Project</span>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col gap-3 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-[#1a202c]">
+<img class="aspect-video w-full object-cover" data-alt="A low-poly render of a stylized landscape with mountains and rivers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBuwyly4XsQ-P_Ka4gGG0AJY9OMFwbCWgAlou8MQ_O4BmkX2nxBzMUt4SzV77EDBJCCO52QjJnTEbqwQHP1q1uEot5fOOixDtHm10JF32sAMB9DCinLEOR4m8ydzK9YH-uKJilnfnDf4GixXkZo3Iz1oVFILlIkgma8O6XnpkoSa4Q1hxIIzwOEUyNWanteLk0MhuBATLeY-fhOFSSdhVnndg_E-p2Lyo3R2uGiKGjSYTLP8CGGFgDLmSFf9bml6kJjIbj3nWUsmEl"/>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="text-black dark:text-white text-lg font-bold leading-tight">Procedural Landscape</h3>
+<div class="flex gap-2 mt-2">
+<span class="text-xs font-medium text-orange-700 dark:text-orange-400 bg-orange-100 dark:bg-orange-900/50 py-1 px-2 rounded-full">Blender</span>
+<span class="text-xs font-medium text-blue-700 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/50 py-1 px-2 rounded-full">3D Modeling</span>
+</div>
+<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
+<span class="text-white text-base font-bold">View Project</span>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col gap-3 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-[#1a202c]">
+<img class="aspect-video w-full object-cover" data-alt="An abstract piece of art made of geometric shapes and lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCULq0cEoM0ucja8V7KWW3S3Ee4AremnRvRAA7ri-f6KPIrIFfIyCAKRd1h2BtxsayCKBNXi4ruSAbzi_Ko0OSdHYHaPk8-ZRHZxvbAVXMmo9l41LJRPD9MF7coroJf4H9qi4HRklhISAim7hEc_1vOUq4W5c1GXTyk5JzI2t7FLGeDIfo8c9SnYAdSGG42ibaQRMdM_loba0JEUoykz52mA_4rjnCPSY9T0vUoT__a8jz6NtvLN_b56eOVSjkR7PKRZJM1PAQwkyp9"/>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="text-black dark:text-white text-lg font-bold leading-tight">Geometric Art with Python</h3>
+<div class="flex gap-2 mt-2">
+<span class="text-xs font-medium text-green-700 dark:text-green-400 bg-green-100 dark:bg-green-900/50 py-1 px-2 rounded-full">Python</span>
+<span class="text-xs font-medium text-blue-700 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/50 py-1 px-2 rounded-full">Mathematics</span>
+</div>
+<div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
+<span class="text-white text-base font-bold">View Project</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CTASection -->
+<div class="@container">
+<div class="flex flex-col justify-end gap-6 px-4 py-16 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+<div class="flex flex-col gap-2 text-center">
+<h1 class="text-black dark:text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px] mx-auto">Interested in working together?</h1>
+</div>
+<div class="flex flex-1 justify-center">
+<div class="flex justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow hover:opacity-90 transition-opacity">
+<span class="truncate">Get in touch</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>
